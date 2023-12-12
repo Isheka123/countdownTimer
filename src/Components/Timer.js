@@ -2,12 +2,13 @@ import React, { useState, useEffect, useRef } from "react";
 import "./Timer.css";
 
 function Timer() {
-  
+
   // States to manage time and timer control
 
   const [sec, setSec] = useState(0);
   const [min, setMin] = useState(0);
   const [hrs, setHrs] = useState(0);
+  const [playState, setPlayState] = useState("paused");
   const [initialVal, setInitialVal] = useState(0);
   const [isRunning, setIsRunning] = useState(false);
   const intervalRef = useRef(null);
@@ -33,16 +34,19 @@ function Timer() {
   // Function to start the timer
   const startTimer = () => {
     setIsRunning(true);
+    setPlayState("playing");
   };
 
   // Function to pause the timer
   const pauseTimer = () => {
     setIsRunning(false);
+    setPlayState("paused");
   };
 
   // Function to reset the timer and input
   const resetTimer = () => {
     clearInterval(intervalRef.current);
+    setPlayState("paused");
     setIsRunning(false);
     setHrs(0);
     setMin(0);
@@ -78,7 +82,8 @@ function Timer() {
   }, [isRunning, hrs, min, sec]);
 
   return (
-    <div className="timer">
+    
+    <div className={`timer ${playState}`}>
       <div className="timer_title">
         <h3>Enter min</h3>
         <input
