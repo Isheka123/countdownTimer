@@ -1,0 +1,60 @@
+body{
+    background-color: rgb(29,35,49);
+}
+h3{
+    color: lightblue;
+    margin-top: 180px;
+    font-size: 25px;
+    margin-left: 25%;
+}
+
+.box{
+
+    width: 50%;
+    height: 20%;
+    background-color: rgb(29,35,49);
+    border: 1px solid lightblue;
+    margin-top: 5px;
+    margin-left: 25%;
+    border-radius: 10px;
+    font-size: 40px;
+    color: lightblue;
+}
+.play{
+    height: 40px;
+    width: 100px;
+    margin-top: 40px;
+    margin-left: 35%;
+    margin-right:0px;
+    cursor:pointer;
+    
+}
+.reset{
+    height: 40px;
+    width: 50px;
+    margin-top: 40px;
+    margin-right:12px;
+    cursor:pointer;
+    /* margin-left: 12px; */
+}
+.pause{
+    height: 40px;
+    width: 50px;
+    margin-top: 40px;
+    margin-right:0px;
+    cursor:pointer;
+
+}
+
+p{
+    color: lightblue;
+    font-size: 55px;
+    margin-top: 20px;
+    margin-right: 30px;
+}
+.play1{
+    display: flex;
+    /* color:lightblue; */
+    /* margin-left:0px; */
+    /* margin-right:0px; */
+}
