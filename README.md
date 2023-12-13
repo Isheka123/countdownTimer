@@ -1,6 +1,6 @@
-# CodePen Clone with React and Material-UI
+# Countdown Timer with React
 
-This is a simplified CodePen clone built using React.
+This is a simplified Countdown Timer built using React.
 
 ## Getting Started
 
