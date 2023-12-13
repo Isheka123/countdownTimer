@@ -85,7 +85,7 @@ function Timer() {
     
     <div className={`timer ${playState}`}>
       <div className="timer_title">
-        <h3>Enter min</h3>
+        <h3>Enter minutes</h3>
         <input
           className="box"
           value={isRunning ? initialVal : initialVal !== 0 ? initialVal : ''}

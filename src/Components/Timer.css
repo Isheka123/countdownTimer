@@ -6,16 +6,16 @@ h3 {
     color: lightblue;
     margin-top: 180px;
     font-size: 25px;
-    margin-left: 25%;
+    margin-left: 30%;
 }
 
 .box {
-    width: 50%;
+    width: 40%;
     height: 20%;
     background-color: rgb(29, 35, 49);
     border: 1px solid lightblue;
     margin-top: 5px;
-    margin-left: 25%;
+    margin-left: 30%;
     border-radius: 10px;
     font-size: 40px;
     color: lightblue;
@@ -69,4 +69,56 @@ p {
 .paused p {
     opacity: 0.5;
     transform: scale(0.9);
+}
+
+@media screen and (max-width: 600px) {
+    h3 {
+        font-size: 20px;
+        margin-top: 50%;
+    }
+
+    .box {
+        width: 80%;
+        max-width: 400px;
+        margin: 0 auto;
+        font-size: 30px;
+        padding: 20px;
+        margin-left: 5%;
+    }
+
+    .play{
+        width: 30%;
+        max-width: 150px;
+        margin-top: 25px;
+        margin-right: 0px;
+        margin-left: auto;
+        cursor: pointer;
+        display: block;
+    }
+    .reset{
+        width: 25%;
+        max-width: 150px;
+        margin-top: 25px;
+        margin-right: 0px;
+        margin-left: 0px;
+        cursor: pointer;
+        display: block;
+    }
+    .pause {
+        width: 25%;
+        max-width: 150px;
+        margin-top: 25px;
+        margin-right: 0px;
+        margin-left: auto;
+        cursor: pointer;
+        display: block;
+    }
+
+    p {
+        font-size: 50px;
+        text-align: center;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 10px;
+    }
 }
